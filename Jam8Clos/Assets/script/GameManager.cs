@@ -4,17 +4,21 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    [Space]
+    [Header("GD Friendly")]
+    [Space]
 
-    //pour les GD
     public float TimerFaisceau;
 
+    [Space]
+    [Header("Public Manager ")]
+    [Space]
 
-
-
-        //Le Reste
- public static GameManager instance;
- public bool FaisceauOK = false;
- public bool PressionOK = false;
+    public static GameManager instance;
+    public bool FaisceauOK = false;
+    public bool PressionOK = false;
+    int currentPress;
+    public  int LastPress;
 
     void Awake()
     {
@@ -32,6 +36,22 @@ public class GameManager : MonoBehaviour
         
     }
 
+
+    public void VerifPression(int ordre)
+    {
+        if (ordre == currentPress + 1)
+        {
+            currentPress = ordre;
+            if(currentPress == LastPress)
+            {
+                PressionOK = true;
+            }
+        }
+        else
+        {
+            currentPress = 0;
+        }
+    }
 
     public void doExitGame()
     {
