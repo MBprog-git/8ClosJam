@@ -35,6 +35,10 @@ float Temps;
             if (timer < 0)
             {
                 GameManager.instance.FaisceauOK = true;
+                GameManager.instance.Diode2.GetComponent<Renderer>().material.color = Color.green;
+                GameManager.instance.Diode2.SetActive(false);
+
+
             }
         }
         else

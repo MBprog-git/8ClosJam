@@ -32,8 +32,13 @@ public class GameManager : MonoBehaviour
     public GameObject Cubetest;
     public GameObject SphereTest;
     public Image Paupiere;
+    public GameObject faisceau;
+    public GameObject Diode1;
+    public GameObject Diode2;
+    public GameObject Diode3;
     public bool FaisceauOK = false;
     public bool PressionOK = false;
+    public bool LettreOK = false;
     int currentPress;
     public  int LastPress;
     private float yaw = 0.0f;
@@ -51,7 +56,9 @@ public class GameManager : MonoBehaviour
     {
         ChronoCycle = TimerJourNuit;
         CycleDay();
-        
+        Diode1.GetComponent<Renderer>().material.color = Color.red;
+        Diode2.GetComponent<Renderer>().material.color = Color.red;
+        Diode3.GetComponent<Renderer>().material.color = Color.red;
     }
 
     // Update is called once per frame
@@ -84,6 +91,11 @@ public class GameManager : MonoBehaviour
             Paupiere.color = new Color(Paupiere.color.r,Paupiere.color.g,Paupiere.color.b,Paupiere.color.a - Time.deltaTime);
             
         }
+        //Porte
+        if(FaisceauOK && PressionOK && LettreOK)
+        {
+            //Porte Ouverte
+        }
     }
 
     public void CycleDay()
@@ -94,11 +106,21 @@ public class GameManager : MonoBehaviour
         {
             SphereTest.SetActive(true);
             Cubetest.GetComponent<Animation>().Stop();
+            if (!FaisceauOK) { 
+            faisceau.SetActive(true);
+            }
+           
+            RenderSettings.ambientLight = new Color(10, 10, 10,1);
+
         }
         else
         { 
             Cubetest.GetComponent<Animation>().Play(Cubetest.GetComponent<Animation>().clip.name);
             SphereTest.SetActive(false);
+            RenderSettings.ambientLight = new Color(0,0, 0,1);
+
+
+            faisceau.SetActive(false);
         }
         Paupiere.color = new Color(Paupiere.color.r, Paupiere.color.g, Paupiere.color.b, 1);
         ChronoCycle = TimerJourNuit;
@@ -111,6 +133,8 @@ public class GameManager : MonoBehaviour
             if(currentPress == LastPress)
             {
                 PressionOK = true;
+                Diode2.GetComponent<Renderer>().material.color = Color.green;
+
             }
         }
         else
