@@ -29,13 +29,17 @@ float Temps;
     private void OnTriggerStay(Collider other)
     {
 
-        if (other.gameObject.tag == "Player")
+        if (other.gameObject.tag == "Player" && GameManager.instance.Jour)
         {
            timer -= Time.deltaTime;
             if (timer < 0)
             {
                 GameManager.instance.FaisceauOK = true;
             }
+        }
+        else
+        {
+            timer = Temps;
         }
     }
 }
