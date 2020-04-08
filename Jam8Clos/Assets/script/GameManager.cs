@@ -40,7 +40,7 @@ public class GameManager : MonoBehaviour
     public bool PressionOK = false;
     public bool LettreOK = false;
     public  int LastPress;
-    int currentPress;
+   // int currentPress;
     float ChronoCycle;
     private float yaw = 0.0f;
     private float pitch = 0.0f;
@@ -126,7 +126,7 @@ public class GameManager : MonoBehaviour
             faisceau.SetActive(true);
             }
             
-            Lumiere.intensity = 4;
+            Lumiere.intensity = 7;
             
         }
         else
@@ -138,12 +138,12 @@ public class GameManager : MonoBehaviour
                 CI.Cycle();
             }
             faisceau.SetActive(false);
-            Lumiere.intensity = 1;
+            Lumiere.intensity = 4;
         }
         Paupiere.color = new Color(Paupiere.color.r, Paupiere.color.g, Paupiere.color.b, 1);
         ChronoCycle = TimerJourNuit;
     }
-    public void VerifPression(int ordre)
+    /*public void VerifPression(int ordre)
     {
         if (ordre == currentPress + 1)
         {
@@ -159,7 +159,7 @@ public class GameManager : MonoBehaviour
         {
             currentPress = 0;
         }
-    }
+    }*/
 
     public void doExitGame()
     {

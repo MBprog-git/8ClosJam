@@ -8,7 +8,7 @@ public class Pression : MonoBehaviour
     public GameObject plaque_1;
     public GameObject plaque_2;
     public GameObject plaque_3;
-    public GameObject verrou;
+   
 
     public bool bool_plaque_1;
     public bool bool_plaque_2;
@@ -34,9 +34,10 @@ public class Pression : MonoBehaviour
     {
         if (cpt == 3)
         {
-            if (bool_plaque_1 && bool_plaque_2 && bool_plaque_3)
+            if (bool_plaque_1 && bool_plaque_2 && bool_plaque_3 && GameManager.instance.PressionOK)
             {
-                verrou.SetActive(true);
+                GameManager.instance.PressionOK = true;
+                GameManager.instance.Diode1.GetComponent<Renderer>().material.color = Color.green;
             }
             else
             {
