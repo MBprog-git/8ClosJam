@@ -7,34 +7,31 @@ public class RayonEnigme : MonoBehaviour
     float timer;
     float Temps;
     
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.tag == "Lettre")
-        {
-            timer = Temps;
-        }
-    }
-    
-    
     public List<GameObject> Light;
     public GameObject[] Lettre;
     public GameObject Verrou;
     public int cpt = 0;
 
+    private bool CD = true;
+
     public bool Lettre_1 = false;
     public bool Lettre_2 = false;
     public bool Lettre_3 = false;
+
     private bool Comfirm_Lettre_1 = false;
     private bool Comfirm_Lettre_2 = false;
     private bool Comfirm_Lettre_3 = false;
 
+    private bool Lettre1_pressed = false;
+    private bool Lettre2_pressed = false;
+    private bool Lettre3_pressed = false;
+    private bool Lettre4_pressed = false;
+    private bool Lettre5_pressed = false;
+    private bool Lettre6_pressed = false;
+
     private void Start()
     {
         Temps = GameManager.instance.TimerLettre;
-        Lettre_1 = false;
-        Lettre_2 = false;
-        Lettre_3 = false;
     }
     void Update()
     {
@@ -51,10 +48,21 @@ public class RayonEnigme : MonoBehaviour
                 Lettre_1 = false;
                 Lettre_2 = false;
                 Lettre_3 = false;
+
                 Comfirm_Lettre_1 = false;
                 Comfirm_Lettre_2 = false;
                 Comfirm_Lettre_3 = false;
+
+                Lettre1_pressed = false;
+                Lettre2_pressed = false;
+                Lettre3_pressed = false;
+                Lettre4_pressed = false;
+                Lettre5_pressed = false;
+                Lettre6_pressed = false;
                 cpt = 0;
+
+                StartCoroutine(Cooldown());
+
                 Light.Clear();
             }
             
@@ -62,9 +70,47 @@ public class RayonEnigme : MonoBehaviour
         
     }
 
-    private void OnTriggerStay(Collider other)
+
+    private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Lettre")
+        {
+            timer = Temps;
+        }
+    }
+
+    void Pressed(Collider other)
+    {
+        if (other.gameObject == Lettre[0] && !Lettre1_pressed)
+        {
+            Lettre1_pressed = true;
+        }
+        else if (other.gameObject == Lettre[1] && !Lettre2_pressed)
+        {
+            Lettre2_pressed = true;
+        }
+        else if (other.gameObject == Lettre[2] && !Lettre3_pressed)
+        {
+            Lettre3_pressed = true;
+        }
+        else if (other.gameObject == Lettre[3] && !Lettre4_pressed)
+        {
+            Lettre4_pressed = true;
+        }
+        else if (other.gameObject == Lettre[4] && !Lettre5_pressed)
+        {
+            Lettre5_pressed = true;
+        }
+        else if (other.gameObject == Lettre[5] && !Lettre6_pressed)
+        {
+            Lettre6_pressed = true;
+        }
+    }
+
+
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.gameObject.tag == "Lettre" && CD == true)
         {
             
             timer -= Time.deltaTime;
@@ -77,62 +123,62 @@ public class RayonEnigme : MonoBehaviour
                 {
 
                     Debug.Log("choix Lettre");
-                    if (other.gameObject == Lettre[0] || other.gameObject == Lettre[1] || other.gameObject == Lettre[2] && !Comfirm_Lettre_1)
+                    if (((other.gameObject == Lettre[0] && !Lettre1_pressed) || (other.gameObject == Lettre[1] && !Lettre2_pressed) || (other.gameObject == Lettre[2] && !Lettre3_pressed)) && !Comfirm_Lettre_1)
                     {
-                        Debug.Log("Lettre1");
                         Lettre_1 = true;
                         Comfirm_Lettre_1 = true;
+                        Pressed(other);
                         cpt++;
                     }
-                    else if (other.gameObject == Lettre[0] || other.gameObject == Lettre[1] || other.gameObject == Lettre[2] && !Comfirm_Lettre_2)
+                    else if (((other.gameObject == Lettre[0] && !Lettre1_pressed) || (other.gameObject == Lettre[1] && !Lettre2_pressed) || (other.gameObject == Lettre[2] && !Lettre3_pressed)) && !Comfirm_Lettre_2)
                     {
-                        Debug.Log("Lettre2");
                         Lettre_2 = true;
                         Comfirm_Lettre_2 = true;
+                        Pressed(other);
                         cpt++;
                     }
-                    else if (other.gameObject == Lettre[0] || other.gameObject == Lettre[1] || other.gameObject == Lettre[2] && !Comfirm_Lettre_3)
+                    else if (((other.gameObject == Lettre[0] && !Lettre1_pressed) || (other.gameObject == Lettre[1] && !Lettre2_pressed) || (other.gameObject == Lettre[2] && !Lettre3_pressed)) && !Comfirm_Lettre_3)
                     {
-                        Debug.Log("Lettre3");
                         Lettre_3 = true;
                         Comfirm_Lettre_3 = true;
+                        Pressed(other);
                         cpt++;
                     }
                     else
                     {
-                        if (other.gameObject == Lettre[3] || other.gameObject == Lettre[4] || other.gameObject == Lettre[5] || other.gameObject == Lettre[6] || other.gameObject == Lettre[7] && !Comfirm_Lettre_1)
+                        if (((other.gameObject == Lettre[3] && !Lettre4_pressed) || (other.gameObject == Lettre[4] && !Lettre5_pressed) || (other.gameObject == Lettre[5] && !Lettre6_pressed)) && !Comfirm_Lettre_1)
                         {
-                            Debug.Log("Lettreautre");
                             Lettre_1 = false;
                             Comfirm_Lettre_1 = true;
+                            Pressed(other);
                             cpt++;
                         }
-                        else if (other.gameObject == Lettre[3] || other.gameObject == Lettre[4] || other.gameObject == Lettre[5] || other.gameObject == Lettre[6] || other.gameObject == Lettre[7] && !Comfirm_Lettre_1 && !Comfirm_Lettre_2)
+                        else if (((other.gameObject == Lettre[3] && !Lettre4_pressed) || (other.gameObject == Lettre[4] && !Lettre5_pressed) || (other.gameObject == Lettre[5] && !Lettre6_pressed)) && !Comfirm_Lettre_2)
                         {
-                            Debug.Log("Lettreautre");
                             Lettre_2 = false;
                             Comfirm_Lettre_2 = true;
+                            Pressed(other);
                             cpt++;
                         }
-                        else if (other.gameObject == Lettre[3] || other.gameObject == Lettre[4] || other.gameObject == Lettre[5] || other.gameObject == Lettre[6] || other.gameObject == Lettre[7] && !Comfirm_Lettre_1 && !Comfirm_Lettre_3)
+                        else if (((other.gameObject == Lettre[3] && !Lettre4_pressed) || (other.gameObject == Lettre[4] && !Lettre5_pressed) || (other.gameObject == Lettre[5] && !Lettre6_pressed)) && !Comfirm_Lettre_3)
                         {
-                            Debug.Log("Lettreautre");
                             Lettre_3 = false;
                             Comfirm_Lettre_3 = true;
+                            Pressed(other);
                             cpt++;
                         }
-
                     }
                 }
-               
-
-
             }
         }
-        else
-        {
-            timer = Temps;
-        }
-        
+    }
+
+    IEnumerator Cooldown()
+    {
+        CD = false;
+
+        yield return new WaitForSeconds(2f);
+
+        CD = true;
     }
 }
