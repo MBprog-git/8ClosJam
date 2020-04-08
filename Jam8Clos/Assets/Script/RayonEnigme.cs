@@ -59,6 +59,7 @@ public class RayonEnigme : MonoBehaviour
                 Lettre4_pressed = false;
                 Lettre5_pressed = false;
                 Lettre6_pressed = false;
+
                 cpt = 0;
 
                 StartCoroutine(Cooldown());
