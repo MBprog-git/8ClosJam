@@ -7,8 +7,8 @@ public class RayonEnigme : MonoBehaviour
     float timer;
     float Temps;
     
-    public List<GameObject> Light;
     public GameObject[] Lettre;
+    public GameObject[] Light;
     public GameObject Verrou;
     public int cpt = 0;
 
@@ -45,6 +45,7 @@ public class RayonEnigme : MonoBehaviour
             }
             else
             {
+                StartCoroutine(Cooldown());
                 Lettre_1 = false;
                 Lettre_2 = false;
                 Lettre_3 = false;
@@ -60,11 +61,13 @@ public class RayonEnigme : MonoBehaviour
                 Lettre5_pressed = false;
                 Lettre6_pressed = false;
 
+                Light[0].SetActive(false);
+                Light[1].SetActive(false);
+                Light[2].SetActive(false);
+                Light[3].SetActive(false);
+                Light[4].SetActive(false);
+                Light[5].SetActive(false);
                 cpt = 0;
-
-                StartCoroutine(Cooldown());
-
-                Light.Clear();
             }
             
         }
@@ -84,26 +87,32 @@ public class RayonEnigme : MonoBehaviour
     {
         if (other.gameObject == Lettre[0] && !Lettre1_pressed)
         {
+            Light[0].SetActive(true);
             Lettre1_pressed = true;
         }
         else if (other.gameObject == Lettre[1] && !Lettre2_pressed)
         {
+            Light[1].SetActive(true);
             Lettre2_pressed = true;
         }
         else if (other.gameObject == Lettre[2] && !Lettre3_pressed)
         {
+            Light[2].SetActive(true);
             Lettre3_pressed = true;
         }
         else if (other.gameObject == Lettre[3] && !Lettre4_pressed)
         {
+            Light[3].SetActive(true);
             Lettre4_pressed = true;
         }
         else if (other.gameObject == Lettre[4] && !Lettre5_pressed)
         {
+            Light[4].SetActive(true);
             Lettre5_pressed = true;
         }
         else if (other.gameObject == Lettre[5] && !Lettre6_pressed)
         {
+            Light[5].SetActive(true);
             Lettre6_pressed = true;
         }
     }
