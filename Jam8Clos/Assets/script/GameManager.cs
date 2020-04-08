@@ -25,37 +25,48 @@ public class GameManager : MonoBehaviour
     [Space]
     [Space]
     [Header("Public Manager")]
-    public bool Jour;
-    float ChronoCycle;
-    public GameObject camera;
+    public GameObject Cam;
     public GameObject Player;
     public GameObject Cubetest;
     public GameObject SphereTest;
-    public Image Paupiere;
     public GameObject faisceau;
     public GameObject Diode1;
     public GameObject Diode2;
     public GameObject Diode3;
+    public Image Paupiere;
+    public Light Lumiere;
+    public bool Jour = true;
     public bool FaisceauOK = false;
     public bool PressionOK = false;
     public bool LettreOK = false;
-    int currentPress;
     public  int LastPress;
+    int currentPress;
+    float ChronoCycle;
     private float yaw = 0.0f;
     private float pitch = 0.0f;
     public static GameManager instance;
-    
+
+    private List<CycleItem> _cycleItems = new List<CycleItem>();
 
     void Awake()
     {
         if (instance == null)
+        {
             instance = this;
+        }
+
+        foreach(CycleItem CI in Resources.FindObjectsOfTypeAll(typeof(CycleItem)))
+        {
+            _cycleItems.Add(CI);
+        }
+
+
     }
     // Start is called before the first frame update
     void Start()
     {
         ChronoCycle = TimerJourNuit;
-        CycleDay();
+        //CycleDay();
         Diode1.GetComponent<Renderer>().material.color = Color.red;
         Diode2.GetComponent<Renderer>().material.color = Color.red;
         Diode3.GetComponent<Renderer>().material.color = Color.red;
@@ -72,9 +83,9 @@ public class GameManager : MonoBehaviour
         yaw += SensitivityH * Input.GetAxis("Mouse X");
         pitch -= SensitivityV * Input.GetAxis("Mouse Y");
         pitch = Mathf.Clamp(pitch, -90, 15);
-        camera.transform.eulerAngles = new Vector3(pitch, yaw, 0.0f);
+        Cam.transform.eulerAngles = new Vector3(pitch, yaw, 0.0f);
         Player.transform.eulerAngles = new Vector3(Player.transform.eulerAngles.x, yaw, Player.transform.eulerAngles.z);
-        camera.transform.position = new Vector3(Player.transform.position.x+OffsetX, Player.transform.position.y+OffsetY, Player.transform.position.z+OffsetZ);
+        Cam.transform.position = new Vector3(Player.transform.position.x+OffsetX, Player.transform.position.y+OffsetY, Player.transform.position.z+OffsetZ);
 
         //Jour-Nuit
         if (ChronoCycle<0)
@@ -104,23 +115,30 @@ public class GameManager : MonoBehaviour
 
         if (Jour)
         {
-            SphereTest.SetActive(true);
-            Cubetest.GetComponent<Animation>().Stop();
+           /* SphereTest.SetActive(true);
+            Cubetest.GetComponent<Animation>().Stop();*/
+
+            foreach(CycleItem CI in _cycleItems)
+            {
+                CI.Cycle();
+            }
             if (!FaisceauOK) { 
             faisceau.SetActive(true);
             }
-           
-            RenderSettings.ambientLight = new Color(10, 10, 10,1);
-
+            
+            Lumiere.intensity = 4;
+            
         }
         else
-        { 
-            Cubetest.GetComponent<Animation>().Play(Cubetest.GetComponent<Animation>().clip.name);
-            SphereTest.SetActive(false);
-            RenderSettings.ambientLight = new Color(0,0, 0,1);
-
-
+        {
+            /* Cubetest.GetComponent<Animation>().Play(Cubetest.GetComponent<Animation>().clip.name);
+             SphereTest.SetActive(false);*/
+            foreach (CycleItem CI in _cycleItems)
+            {
+                CI.Cycle();
+            }
             faisceau.SetActive(false);
+            Lumiere.intensity = 1;
         }
         Paupiere.color = new Color(Paupiere.color.r, Paupiere.color.g, Paupiere.color.b, 1);
         ChronoCycle = TimerJourNuit;
