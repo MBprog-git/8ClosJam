@@ -4,11 +4,8 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - EnigmaLaser
-  - enigme3L
-  - enigme3E
-  - enigme3O
-  - enigme3N
+  - Laser
+  - Lettre
   layers:
   - Default
   - TransparentFX
