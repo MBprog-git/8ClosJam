@@ -34,9 +34,10 @@ float Temps;
            timer -= Time.deltaTime;
             if (timer < 0)
             {
+                Debug.Log("Faisceau Ok");
                 GameManager.instance.FaisceauOK = true;
                 GameManager.instance.Diode2.GetComponent<Renderer>().material.color = Color.green;
-                GameManager.instance.Diode2.SetActive(false);
+       
 
 
             }

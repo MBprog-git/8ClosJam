@@ -8,9 +8,9 @@ public class RayonEnigme : MonoBehaviour
     float Temps;
     
     public GameObject[] Lettre;
-    public GameObject[] LettreD;
+    
     public GameObject[] Light;
-    public GameObject Verrou;
+
     public int cpt = 0;
 
     private bool CD = true;
@@ -42,7 +42,7 @@ public class RayonEnigme : MonoBehaviour
             {
                 GameManager.instance.LettreOK = true;
                 GameManager.instance.Diode3.GetComponent<Renderer>().material.color = Color.green;
-                GameManager.instance.Diode3.SetActive(false);
+              
             }
             else
             {
