@@ -8,6 +8,7 @@ public class RayonEnigme : MonoBehaviour
     float Temps;
     
     public GameObject[] Lettre;
+    public GameObject[] LettreD;
     public GameObject[] Light;
     public GameObject Verrou;
     public int cpt = 0;
@@ -46,6 +47,7 @@ public class RayonEnigme : MonoBehaviour
             else
             {
                 StartCoroutine(Cooldown());
+
                 Lettre_1 = false;
                 Lettre_2 = false;
                 Lettre_3 = false;
@@ -67,6 +69,7 @@ public class RayonEnigme : MonoBehaviour
                 Light[3].SetActive(false);
                 Light[4].SetActive(false);
                 Light[5].SetActive(false);
+                
                 cpt = 0;
             }
             
