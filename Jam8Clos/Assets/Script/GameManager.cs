@@ -13,6 +13,10 @@ public class GameManager : MonoBehaviour
    
     [Space]
     public float TimerFaisceau;
+<<<<<<< HEAD
+=======
+    public float TimerLettre;
+>>>>>>> origin/Leo
     public float TimerJourNuit;
     [Space]
     public float SensitivityH;
@@ -40,7 +44,11 @@ public class GameManager : MonoBehaviour
     public bool PressionOK = false;
     public bool LettreOK = false;
     public  int LastPress;
+<<<<<<< HEAD
    // int currentPress;
+=======
+    int currentPress;
+>>>>>>> origin/Leo
     float ChronoCycle;
     private float yaw = 0.0f;
     private float pitch = 0.0f;
@@ -126,7 +134,11 @@ public class GameManager : MonoBehaviour
             faisceau.SetActive(true);
             }
             
+<<<<<<< HEAD
             Lumiere.intensity = 7;
+=======
+            Lumiere.intensity = 4;
+>>>>>>> origin/Leo
             
         }
         else
@@ -138,12 +150,20 @@ public class GameManager : MonoBehaviour
                 CI.Cycle();
             }
             faisceau.SetActive(false);
+<<<<<<< HEAD
             Lumiere.intensity = 4;
+=======
+            Lumiere.intensity = 1;
+>>>>>>> origin/Leo
         }
         Paupiere.color = new Color(Paupiere.color.r, Paupiere.color.g, Paupiere.color.b, 1);
         ChronoCycle = TimerJourNuit;
     }
+<<<<<<< HEAD
     /*public void VerifPression(int ordre)
+=======
+    public void VerifPression(int ordre)
+>>>>>>> origin/Leo
     {
         if (ordre == currentPress + 1)
         {
@@ -159,7 +179,11 @@ public class GameManager : MonoBehaviour
         {
             currentPress = 0;
         }
+<<<<<<< HEAD
     }*/
+=======
+    }
+>>>>>>> origin/Leo
 
     public void doExitGame()
     {
