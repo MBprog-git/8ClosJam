@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 69794576}
   - component: {fileID: 69794579}
   - component: {fileID: 69794580}
+  - component: {fileID: 69794581}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -162,7 +163,7 @@ BoxCollider:
   m_GameObject: {fileID: 69794575}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -174,7 +175,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 69794575}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.5, y: -64.5, z: -21.1}
+  m_LocalPosition: {x: -0.5, y: -19.3, z: -21.1}
   m_LocalScale: {x: 40, y: 40, z: 40}
   m_Children: []
   m_Father: {fileID: 0}
@@ -213,6 +214,20 @@ MonoBehaviour:
   plaque_3: {fileID: 1825760654}
   illumination: {fileID: 2100000, guid: df4395f96abb13e48bb51f41b188945a, type: 2}
   standard: {fileID: 2100000, guid: fb3bd15c30e59334aae921316cd84703, type: 2}
+--- !u!136 &69794581
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 69794575}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.23
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &81846478
 GameObject:
   m_ObjectHideFlags: 0
@@ -1620,6 +1635,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Interaction: 0
+  DayPoint: {fileID: 0}
+  NightPoint: {fileID: 0}
 --- !u!65 &865913527
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2491,6 +2508,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Interaction: 0
+  DayPoint: {fileID: 0}
+  NightPoint: {fileID: 0}
 --- !u!65 &1201235312
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2682,10 +2701,10 @@ MonoBehaviour:
   OffsetX: 0
   OffsetY: 5
   OffsetZ: 0
+  Gravity: 150
+  FallSpeedMax: 50
   Cam: {fileID: 220953307}
   Player: {fileID: 69794575}
-  Cubetest: {fileID: 0}
-  SphereTest: {fileID: 0}
   faisceau: {fileID: 486393973}
   Diode1: {fileID: 233142818}
   Diode2: {fileID: 1430909466}
@@ -3033,6 +3052,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Interaction: 0
+  DayPoint: {fileID: 0}
+  NightPoint: {fileID: 0}
 --- !u!65 &1344570627
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3251,6 +3272,11 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 03c61e78fbfd2d9448dc3fbeda250f63,
         type: 3}
       propertyPath: m_Name
+      value: Scene
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 03c61e78fbfd2d9448dc3fbeda250f63,
+        type: 3}
+      propertyPath: m_TagString
       value: Scene
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -3602,6 +3628,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Interaction: 0
+  DayPoint: {fileID: 0}
+  NightPoint: {fileID: 0}
 --- !u!65 &1568033519
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4236,6 +4264,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Interaction: 0
+  DayPoint: {fileID: 0}
+  NightPoint: {fileID: 0}
 --- !u!65 &1991778153
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4343,6 +4373,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Interaction: 0
+  DayPoint: {fileID: 0}
+  NightPoint: {fileID: 0}
 --- !u!65 &2011612152
 BoxCollider:
   m_ObjectHideFlags: 0
