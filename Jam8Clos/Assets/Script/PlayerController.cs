@@ -15,13 +15,19 @@ public class PlayerController : MonoBehaviour
 
 
      float speed;
+
+    bool _Grounded;
+    float Gravity;
+    float SpeedFall;
+    float SpeedFallMax;
      
 
     // Start is called before the first frame update
     void Start()
     {
         speed = GameManager.instance.speed;
-        
+        Gravity = GameManager.instance.Gravity;
+        SpeedFallMax = GameManager.instance.FallSpeedMax;
      
 
         rb = GetComponent<Rigidbody>();
@@ -71,6 +77,8 @@ public class PlayerController : MonoBehaviour
               
             transform.position -= transform.right * Time.deltaTime * speed;
           }
+
+        Gravitation(Time.fixedDeltaTime);
 
          /* if (Avant)
           {
@@ -191,6 +199,40 @@ public class PlayerController : MonoBehaviour
         
 
 
+    }
+
+    private void Gravitation(float DeltaTime)
+    {
+        if (_Grounded)
+        {
+            SpeedFall = 0;
+        }
+        else
+        {
+            SpeedFall -= Gravity * DeltaTime;
+            if (SpeedFall < -SpeedFallMax)
+            {
+                SpeedFall = -SpeedFallMax;
+            
+            }
+            rb.velocity = new Vector3(rb.velocity.x, SpeedFall, rb.velocity.z);
+        }
+
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.tag == "Scene")
+        {
+            _Grounded = true;
+        }
+    }
+    private void OnCollisionExit(Collision collision)
+    {
+        if (collision.gameObject.tag == "Scene")
+        {
+            _Grounded = false;
+        }
     }
 }
 

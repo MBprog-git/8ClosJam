@@ -23,6 +23,9 @@ public class GameManager : MonoBehaviour
     public float OffsetX;
     public float OffsetY;
     public float OffsetZ;
+    [Space]
+    public float Gravity;
+    public float FallSpeedMax;
 
 
     [Space]
