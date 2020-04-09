@@ -8,8 +8,12 @@ public enum Interaction_Type
     {
         Toggle,
         Animation,
+        Teleport,
     }
     public Interaction_Type Interaction = Interaction_Type.Toggle;
+
+    public Transform DayPoint;
+    public Transform NightPoint;
 
 
     public void Cycle()
@@ -29,9 +33,17 @@ public enum Interaction_Type
                 {
                     GetComponent<Animation>().Play(GetComponent<Animation>().clip.name);
                 }
-
-
                 break;
+            case Interaction_Type.Teleport:
+                if (transform.position == DayPoint.position)
+                {
+                    transform.position = NightPoint.position;
+                }
+                else
+                {
+                    transform.position = DayPoint.position;
+                }
+                    break;
         }
     }
 }
