@@ -23,7 +23,11 @@ public class GameManager : MonoBehaviour
     public float OffsetX;
     public float OffsetY;
     public float OffsetZ;
-    [Space]
+
+    public float LimiteCamDown=-90;
+    public float LimiteCamUp=15;
+    
+        [Space]
     public float Gravity;
     public float FallSpeedMax;
 
@@ -90,7 +94,7 @@ public class GameManager : MonoBehaviour
     }
         yaw += SensitivityH * Input.GetAxis("Mouse X");
         pitch -= SensitivityV * Input.GetAxis("Mouse Y");
-        pitch = Mathf.Clamp(pitch, -90, 15);
+        pitch = Mathf.Clamp(pitch, LimiteCamDown, LimiteCamUp);
         Cam.transform.eulerAngles = new Vector3(pitch, yaw, 0.0f);
         Player.transform.eulerAngles = new Vector3(Player.transform.eulerAngles.x, yaw, Player.transform.eulerAngles.z);
         Cam.transform.position = new Vector3(Player.transform.position.x+OffsetX, Player.transform.position.y+OffsetY, Player.transform.position.z+OffsetZ);

@@ -7,13 +7,14 @@ public class SfxManager : MonoBehaviour
     public float RandTimerUp;
     public float RandTimerDown;
     float Timer;
-    public List<AudioClip> Sfx;
+    public AudioClip[] Sfx;
+    public GameObject[] Haut_Parleurs;
     AudioSource Source;
 
     // Start is called before the first frame update
     void Start()
     {
-        Source = GetComponent<AudioSource>();
+        
         Timer = Random.Range(RandTimerDown, RandTimerUp);
     }
 
@@ -23,14 +24,20 @@ public class SfxManager : MonoBehaviour
         Timer -= Time.fixedDeltaTime;
         if (Timer < 0)
         {
-            int i = Random.Range(0, Sfx.Count);
-            Debug.Log(i);
 
+            int i = Random.Range(0, Sfx.Length);
+            int o = Random.Range(0, Haut_Parleurs.Length);
+            
+            Debug.Log(i +"Sfx");
+            Debug.Log(o+"Hp");
+
+            Source = Haut_Parleurs[o].GetComponent<AudioSource>();
             Source.PlayOneShot(Sfx[i]);
 
             
 
         Timer = Random.Range(RandTimerDown, RandTimerUp);
+            Debug.Log(Timer);
         }
     }
 }
