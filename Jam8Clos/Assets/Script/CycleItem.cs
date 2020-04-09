@@ -35,6 +35,11 @@ public enum Interaction_Type
                 }
                 break;
             case Interaction_Type.Teleport:
+                if(DayPoint == null || NightPoint == null)
+                {
+                    Debug.Log("PAS DE POINT A UN TELEPORT");
+                    return;
+                }
                 if (transform.position == DayPoint.position)
                 {
                     transform.position = NightPoint.position;
