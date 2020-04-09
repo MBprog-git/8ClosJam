@@ -33,8 +33,8 @@ public class GameManager : MonoBehaviour
     [Header("Public Manager")]
     public GameObject Cam;
     public GameObject Player;
-    public GameObject Cubetest;
-    public GameObject SphereTest;
+   // public GameObject Cubetest;
+   // public GameObject SphereTest;
     public GameObject faisceau;
     public GameObject Diode1;
     public GameObject Diode2;
