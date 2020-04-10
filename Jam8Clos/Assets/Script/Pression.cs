@@ -41,7 +41,7 @@ public class Pression : MonoBehaviour
                 GameManager.instance.PressionOK = true;
                 GameManager.instance.Diode1.GetComponent<Renderer>().material.color = Color.green;
             }
-            else
+            else if(!bool_plaque_1 && !bool_plaque_2 && !bool_plaque_3)
             {
                 bool_plaque_1 = false;
                 bool_plaque_2 = false;
