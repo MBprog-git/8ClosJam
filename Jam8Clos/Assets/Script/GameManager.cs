@@ -118,7 +118,7 @@ public class GameManager : MonoBehaviour
         //Porte
         if(FaisceauOK && PressionOK && LettreOK && !Open)
         {
-           Porte.GetComponent<Animation>().Play(GetComponent<Animation>().clip.name);
+           Porte.GetComponent<Animation>().Play(Porte.GetComponent<Animation>().clip.name);
             Open = true;
         }
     }
