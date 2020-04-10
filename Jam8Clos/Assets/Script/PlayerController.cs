@@ -21,6 +21,8 @@ public class PlayerController : MonoBehaviour
     float Gravity;
     float SpeedFall;
     float SpeedFallMax;
+
+    public Transform Respawn;
      
 
     // Start is called before the first frame update
@@ -223,10 +225,15 @@ public class PlayerController : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+        if(collision.gameObject.tag == "Respawn")
+        {
+            transform.position = Respawn.transform.position;
+        }
         if(collision.gameObject.tag == "Scene")
         {
             _Grounded = true;
         }
+
     }
     private void OnCollisionExit(Collision collision)
     {
