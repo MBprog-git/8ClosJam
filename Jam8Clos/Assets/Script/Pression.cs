@@ -41,7 +41,7 @@ public class Pression : MonoBehaviour
                 GameManager.instance.PressionOK = true;
                 GameManager.instance.Diode1.GetComponent<Renderer>().material.color = Color.green;
             }
-            else if(!bool_plaque_1 && !bool_plaque_2 && !bool_plaque_3)
+            else if(!bool_plaque_1 || !bool_plaque_2 || !bool_plaque_3)
             {
                 bool_plaque_1 = false;
                 bool_plaque_2 = false;
@@ -53,12 +53,16 @@ public class Pression : MonoBehaviour
                 cpt = 0;
                 timeAfterFail = 3.0f;
 
-                plaque_1.GetComponent<Renderer>().material = standard;
-                plaque_2.GetComponent<Renderer>().material = standard;
-                plaque_3.GetComponent<Renderer>().material = standard;
-                plaque_1.GetComponent<Light>().enabled = false;
-                plaque_2.GetComponent<Light>().enabled = false;
-                plaque_3.GetComponent<Light>().enabled = false;
+                plaque_1.GetComponent<Renderer>().material.DisableKeyword("_EMISSION");
+                plaque_2.GetComponent<Renderer>().material.DisableKeyword("_EMISSION");
+                plaque_3.GetComponent<Renderer>().material.DisableKeyword("_EMISSION");
+
+                //plaque_1.GetComponent<Renderer>().material = standard;
+                //plaque_2.GetComponent<Renderer>().material = standard;
+                //plaque_3.GetComponent<Renderer>().material = standard;
+                //plaque_1.GetComponent<Light>().enabled = false;
+                //plaque_2.GetComponent<Light>().enabled = false;
+                //plaque_3.GetComponent<Light>().enabled = false;
             }
         }
         if (timeAfterFail >= 0)
@@ -76,24 +80,28 @@ public class Pression : MonoBehaviour
                 {
                     pressed_plaque_1 = true;
                     bool_plaque_1 = true;
-                    plaque_1.GetComponent<Light>().enabled = true;
-                    plaque_1.GetComponent<Renderer>().material = illumination;
+                    plaque_1.GetComponent<Renderer>().material.EnableKeyword("_EMISSION");
+                    //plaque_1.GetComponent<Renderer>().material = illumination;
                     cpt++;
                 }
                 else if (cpt == 1 && other.gameObject == plaque_2 && !pressed_plaque_2)
                 {
                     pressed_plaque_2 = true;
                     bool_plaque_2 = true;
-                    plaque_2.GetComponent<Light>().enabled = true;
-                    plaque_2.GetComponent<Renderer>().material = illumination;
+                    //plaque_2.GetComponent<Light>().enabled = true;
+                    //plaque_2.GetComponent<Renderer>().material = illumination;
+                    plaque_2.GetComponent<Renderer>().material.EnableKeyword("_EMISSION");
+
                     cpt++;
                 }
                 else if (cpt == 2 && other.gameObject == plaque_3 && !pressed_plaque_3)
                 {
                     pressed_plaque_3 = true;
                     bool_plaque_3 = true;
-                    plaque_3.GetComponent<Light>().enabled = true;
-                    plaque_3.GetComponent<Renderer>().material = illumination;
+                    //plaque_3.GetComponent<Light>().enabled = true;
+                    //plaque_3.GetComponent<Renderer>().material = illumination;
+                    plaque_3.GetComponent<Renderer>().material.EnableKeyword("_EMISSION");
+
                     cpt++;
                 }
                 else
@@ -102,24 +110,30 @@ public class Pression : MonoBehaviour
                     {
                         pressed_plaque_1 = true;
                         bool_plaque_1 = false;
-                        plaque_1.GetComponent<Light>().enabled = true;
-                        plaque_1.GetComponent<Renderer>().material = illumination;
+                        //plaque_1.GetComponent<Light>().enabled = true;
+                        //plaque_1.GetComponent<Renderer>().material = illumination;
+                        plaque_1.GetComponent<Renderer>().material.EnableKeyword("_EMISSION");
+
                         cpt++;
                     }
                     else if (other.gameObject == plaque_2 && cpt != 1 && !pressed_plaque_2)
                     {
                         pressed_plaque_2 = true;
                         bool_plaque_2 = false;
-                        plaque_2.GetComponent<Light>().enabled = true;
-                        plaque_2.GetComponent<Renderer>().material = illumination;
+                        //plaque_2.GetComponent<Light>().enabled = true;
+                        //plaque_2.GetComponent<Renderer>().material = illumination;
+                        plaque_2.GetComponent<Renderer>().material.EnableKeyword("_EMISSION");
+
                         cpt++;
                     }
                     else if (other.gameObject == plaque_3 && cpt != 2 && !pressed_plaque_3)
                     {
                         pressed_plaque_3 = true;
                         bool_plaque_3 = false;
-                        plaque_3.GetComponent<Light>().enabled = true;
-                        plaque_3.GetComponent<Renderer>().material = illumination;
+                        //plaque_3.GetComponent<Light>().enabled = true;
+                        //plaque_3.GetComponent<Renderer>().material = illumination;
+                        plaque_3.GetComponent<Renderer>().material.EnableKeyword("_EMISSION");
+
                         cpt++;
                     }
                 }
