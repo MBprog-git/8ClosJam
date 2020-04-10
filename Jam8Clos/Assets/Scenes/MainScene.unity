@@ -17416,6 +17416,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1946319699}
   - component: {fileID: 1946319700}
+  - component: {fileID: 1946319701}
   m_Layer: 0
   m_Name: Directional Light (1)
   m_TagString: Untagged
@@ -17498,6 +17499,22 @@ Light:
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &1946319701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1946319698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5de50130f8589943a67d8bb8e6a5ca5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Interaction: 0
+  DayPoint: {fileID: 0}
+  NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
 --- !u!1 &1952568576 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 1042d4ac475016a4487ea36f2080e1ff,
