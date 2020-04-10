@@ -36,8 +36,8 @@ float Temps;
             {
                 Debug.Log("Faisceau Ok");
                 GameManager.instance.FaisceauOK = true;
-                GameManager.instance.Diode2.GetComponent<Renderer>().material.color = Color.green;
-       
+                GameManager.instance.Diode2.GetComponent<Renderer>().material.EnableKeyword("_EMISSION");
+
 
 
             }

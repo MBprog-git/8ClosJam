@@ -41,8 +41,8 @@ public class RayonEnigme : MonoBehaviour
             if (Lettre_1 & Lettre_2 & Lettre_3)
             {
                 GameManager.instance.LettreOK = true;
-                GameManager.instance.Diode3.GetComponent<Renderer>().material.color = Color.green;
-              
+                GameManager.instance.Diode3.GetComponent<Renderer>().material.EnableKeyword("_EMISSION");
+
             }
             else
             {

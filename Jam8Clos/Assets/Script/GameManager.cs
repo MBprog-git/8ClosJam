@@ -80,9 +80,9 @@ public class GameManager : MonoBehaviour
     {
         ChronoCycle = TimerJourNuit;
         //CycleDay();
-        Diode1.GetComponent<Renderer>().material.color = Color.red;
+/*        Diode1.GetComponent<Renderer>().material.color = Color.red;
         Diode2.GetComponent<Renderer>().material.color = Color.red;
-        Diode3.GetComponent<Renderer>().material.color = Color.red;
+        Diode3.GetComponent<Renderer>().material.color = Color.red;*/
     }
 
     // Update is called once per frame
