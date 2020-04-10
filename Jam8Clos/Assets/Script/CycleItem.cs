@@ -9,12 +9,16 @@ public enum Interaction_Type
         Toggle,
         Animation,
         Teleport,
+        PlayerSafe,
     }
     public Interaction_Type Interaction = Interaction_Type.Toggle;
 
     public Transform DayPoint;
     public Transform NightPoint;
+    public Transform PlayerRepos;
 
+    bool playerIn;
+    GameObject Player;
 
     public void Cycle()
     {
@@ -37,7 +41,7 @@ public enum Interaction_Type
             case Interaction_Type.Teleport:
                 if(DayPoint == null || NightPoint == null)
                 {
-                    Debug.Log("PAS DE POINT A UN TELEPORT");
+                    Debug.Log("PAS DE POINT A UN OBJET TELEPORT");
                     return;
                 }
                 if (transform.position == DayPoint.position)
@@ -49,6 +53,35 @@ public enum Interaction_Type
                     transform.position = DayPoint.position;
                 }
                     break;
+            case Interaction_Type.PlayerSafe:
+                if(PlayerRepos == null)
+                {
+                    Debug.Log("PAS DE PlayerRepos");
+                    return;
+                }
+                if (playerIn)
+                {
+                    Player.transform.position = PlayerRepos.transform.position;
+                }
+                gameObject.SetActive(!gameObject.activeSelf);
+
+                break;
+        }
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.tag == "Player")
+        {
+            playerIn = true;
+            Player = other.gameObject;
+        }
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.tag == "Player")
+        {
+            playerIn = false;
+           
         }
     }
 }

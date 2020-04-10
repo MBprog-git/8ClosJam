@@ -43,16 +43,17 @@ public class GameManager : MonoBehaviour
     public GameObject Diode1;
     public GameObject Diode2;
     public GameObject Diode3;
+    public GameObject Porte;
     public Image Paupiere;
     public Light Lumiere;
     public bool Jour = true;
     public bool FaisceauOK = false;
     public bool PressionOK = false;
     public bool LettreOK = false;
-    public  int LastPress;
+  //  public  int LastPress;
 
-   // int currentPress;
-
+    // int currentPress;
+    bool Open;
     float ChronoCycle;
     private float yaw = 0.0f;
     private float pitch = 0.0f;
@@ -115,9 +116,10 @@ public class GameManager : MonoBehaviour
             
         }
         //Porte
-        if(FaisceauOK && PressionOK && LettreOK)
+        if(FaisceauOK && PressionOK && LettreOK && !Open)
         {
-            //Porte Ouverte
+           Porte.GetComponent<Animation>().Play(GetComponent<Animation>().clip.name);
+            Open = true;
         }
     }
 

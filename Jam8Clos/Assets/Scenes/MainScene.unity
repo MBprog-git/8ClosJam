@@ -142,6 +142,7 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
 --- !u!1 &44757258 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 1042d4ac475016a4487ea36f2080e1ff,
@@ -163,6 +164,7 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
 --- !u!4 &50355839 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 1042d4ac475016a4487ea36f2080e1ff,
@@ -190,6 +192,7 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
 --- !u!1 &69794575
 GameObject:
   m_ObjectHideFlags: 0
@@ -472,6 +475,101 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
+--- !u!1 &75143184
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 75143185}
+  - component: {fileID: 75143188}
+  - component: {fileID: 75143187}
+  - component: {fileID: 75143186}
+  m_Layer: 0
+  m_Name: Fc2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &75143185
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 75143184}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -68, y: 9.4, z: 111.8}
+  m_LocalScale: {x: 30, y: 200, z: 30}
+  m_Children: []
+  m_Father: {fileID: 486393974}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &75143186
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 75143184}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.5000001
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+--- !u!23 &75143187
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 75143184}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 69ee1de2a6a691c49a3a2aba121e6710, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &75143188
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 75143184}
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &81846478
 GameObject:
   m_ObjectHideFlags: 0
@@ -687,6 +785,7 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
 --- !u!1 &95635109
 GameObject:
   m_ObjectHideFlags: 0
@@ -801,6 +900,7 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
 --- !u!1 &124182516 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 1042d4ac475016a4487ea36f2080e1ff,
@@ -822,6 +922,7 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
 --- !u!1001 &124542106
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1100,6 +1201,7 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
 --- !u!4 &160001743 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: dddf6ffc2cfdf6e419d1faac5fd069dd,
@@ -1127,6 +1229,101 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
+--- !u!1 &170821580
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 170821581}
+  - component: {fileID: 170821584}
+  - component: {fileID: 170821583}
+  - component: {fileID: 170821582}
+  m_Layer: 0
+  m_Name: Fc1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &170821581
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 170821580}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -124.5, y: 9.4, z: 52.4}
+  m_LocalScale: {x: 30, y: 200, z: 30}
+  m_Children: []
+  m_Father: {fileID: 486393974}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &170821582
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 170821580}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.5000001
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+--- !u!23 &170821583
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 170821580}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 69ee1de2a6a691c49a3a2aba121e6710, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &170821584
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 170821580}
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &172405641
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1279,6 +1476,7 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
 --- !u!65 &188126395
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1326,6 +1524,7 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
 --- !u!1001 &194056685
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1436,6 +1635,7 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
 --- !u!65 &194617524
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1483,6 +1683,7 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
 --- !u!1 &207203147
 GameObject:
   m_ObjectHideFlags: 0
@@ -1697,6 +1898,10 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1554043318}
+  - {fileID: 1754272755}
+  - {fileID: 727588717}
+  - {fileID: 793553498}
+  - {fileID: 1450144142}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2141,6 +2346,7 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
 --- !u!4 &245821304 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 1042d4ac475016a4487ea36f2080e1ff,
@@ -2353,6 +2559,7 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
 --- !u!65 &258217681
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2406,6 +2613,7 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
 --- !u!4 &278949469 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 43d6c9c667437264d9e4bb25a3364bdc,
@@ -2524,6 +2732,7 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
 --- !u!1001 &311051510
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2640,6 +2849,7 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
 --- !u!1 &327095247
 GameObject:
   m_ObjectHideFlags: 0
@@ -2956,12 +3166,107 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
 --- !u!4 &350270771 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 1042d4ac475016a4487ea36f2080e1ff,
     type: 3}
   m_PrefabInstance: {fileID: 2124078348}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &357450123
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 357450124}
+  - component: {fileID: 357450127}
+  - component: {fileID: 357450126}
+  - component: {fileID: 357450125}
+  m_Layer: 0
+  m_Name: Fc3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &357450124
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 357450123}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 67.6, y: 9.4, z: 111}
+  m_LocalScale: {x: 30, y: 200, z: 30}
+  m_Children: []
+  m_Father: {fileID: 486393974}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &357450125
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 357450123}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.5000001
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+--- !u!23 &357450126
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 357450123}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 69ee1de2a6a691c49a3a2aba121e6710, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &357450127
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 357450123}
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!4 &358224504 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 1042d4ac475016a4487ea36f2080e1ff,
@@ -3167,6 +3472,7 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
 --- !u!1 &387596670
 GameObject:
   m_ObjectHideFlags: 0
@@ -3343,6 +3649,7 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
 --- !u!1 &395285218 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 1042d4ac475016a4487ea36f2080e1ff,
@@ -3364,6 +3671,7 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
 --- !u!1001 &398663275
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3548,6 +3856,7 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
 --- !u!1001 &413074423
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3737,6 +4046,7 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
 --- !u!1001 &446336299
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3931,6 +4241,7 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
 --- !u!4 &454878251 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 1042d4ac475016a4487ea36f2080e1ff,
@@ -4059,6 +4370,7 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
 --- !u!1 &472521186 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 43d6c9c667437264d9e4bb25a3364bdc,
@@ -4080,6 +4392,7 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
 --- !u!4 &480027682 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 1042d4ac475016a4487ea36f2080e1ff,
@@ -4113,6 +4426,7 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
 --- !u!1001 &480911076
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4384,10 +4698,14 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 1292985376}
   - {fileID: 1755662177}
   - {fileID: 2092397436}
   - {fileID: 1216931098}
-  - {fileID: 1292985376}
+  - {fileID: 170821581}
+  - {fileID: 75143185}
+  - {fileID: 357450124}
+  - {fileID: 1117349288}
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4412,6 +4730,7 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
 --- !u!1 &489610986 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 1042d4ac475016a4487ea36f2080e1ff,
@@ -4433,6 +4752,7 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
 --- !u!1 &491033804 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 0e199cfbb7d99db499aa75272551394d,
@@ -4480,6 +4800,7 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
 --- !u!1001 &492017202
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4773,6 +5094,7 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
 --- !u!4 &515836773 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: dddf6ffc2cfdf6e419d1faac5fd069dd,
@@ -4894,6 +5216,7 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
 --- !u!65 &517910846
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5297,6 +5620,7 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
 --- !u!108 &571862034
 Light:
   m_ObjectHideFlags: 0
@@ -5488,6 +5812,7 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
 --- !u!1 &588473890 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 1042d4ac475016a4487ea36f2080e1ff,
@@ -5509,6 +5834,7 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
 --- !u!1 &590710774
 GameObject:
   m_ObjectHideFlags: 0
@@ -5762,6 +6088,7 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
 --- !u!4 &616826833 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 1613823327e0e7d40b4e995e21ea3bf5,
@@ -5795,6 +6122,7 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
 --- !u!65 &648883541
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5924,6 +6252,7 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
 --- !u!4 &669623485 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: d5038a6dad970934f90ef4bb800da95f,
@@ -6036,6 +6365,7 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
 --- !u!65 &676605182
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6225,6 +6555,36 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f42d87608d99909418e3c76580748012, type: 3}
+--- !u!1 &700261721
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 700261722}
+  m_Layer: 0
+  m_Name: 1Repos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &700261722
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 700261721}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 126.2, y: -72, z: -59.300003}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1138443313}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &706226124 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 1042d4ac475016a4487ea36f2080e1ff,
@@ -6246,6 +6606,7 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
 --- !u!1001 &708499113
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6325,6 +6686,133 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1042d4ac475016a4487ea36f2080e1ff, type: 3}
+--- !u!1 &727588716
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 727588717}
+  - component: {fileID: 727588718}
+  m_Layer: 0
+  m_Name: SpeakerBack
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &727588717
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 727588716}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -100}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 220953310}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &727588718
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 727588716}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &728111156
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6441,6 +6929,7 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
 --- !u!4 &733858352 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 95b589e61a75d304fba261074c14740d,
@@ -6561,6 +7050,7 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
 --- !u!64 &753882817
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6657,6 +7147,134 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
+--- !u!1 &793553497
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 793553498}
+  - component: {fileID: 793553499}
+  m_Layer: 0
+  m_Name: SpeakerLeft
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &793553498
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 793553497}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -100, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 220953310}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &793553499
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 793553497}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!4 &816904995 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 95b589e61a75d304fba261074c14740d,
@@ -6956,6 +7574,7 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
 --- !u!65 &865913527
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7808,6 +8427,7 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
 --- !u!1001 &965514083
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8009,6 +8629,7 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
 --- !u!1001 &1003675437
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8117,6 +8738,7 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
 --- !u!1001 &1020589694
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8335,6 +8957,7 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
 --- !u!1 &1032830161 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 1042d4ac475016a4487ea36f2080e1ff,
@@ -8356,6 +8979,7 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
 --- !u!1 &1042080671
 GameObject:
   m_ObjectHideFlags: 0
@@ -8423,6 +9047,7 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
 --- !u!4 &1056025254 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 1042d4ac475016a4487ea36f2080e1ff,
@@ -8543,6 +9168,7 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
 --- !u!1 &1075414220 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: dddf6ffc2cfdf6e419d1faac5fd069dd,
@@ -8570,6 +9196,7 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
 --- !u!65 &1075414223
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8617,6 +9244,7 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
 --- !u!1 &1090353359
 GameObject:
   m_ObjectHideFlags: 0
@@ -9060,6 +9688,113 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 43d6c9c667437264d9e4bb25a3364bdc, type: 3}
+--- !u!1 &1117349287
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1117349288}
+  - component: {fileID: 1117349292}
+  - component: {fileID: 1117349291}
+  - component: {fileID: 1117349290}
+  - component: {fileID: 1117349289}
+  m_Layer: 0
+  m_Name: Fc4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1117349288
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1117349287}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 124.7, y: 9.4, z: 50.2}
+  m_LocalScale: {x: 30, y: 200, z: 30}
+  m_Children: []
+  m_Father: {fileID: 486393974}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1117349289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1117349287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fda4da47a851ca043a4c6f64428a9ed9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!136 &1117349290
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1117349287}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.5000001
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+--- !u!23 &1117349291
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1117349287}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 69ee1de2a6a691c49a3a2aba121e6710, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &1117349292
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1117349287}
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1127889836
 GameObject:
   m_ObjectHideFlags: 0
@@ -9181,6 +9916,7 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
 --- !u!1 &1133175017 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: f42d87608d99909418e3c76580748012,
@@ -9208,6 +9944,7 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
 --- !u!65 &1133175020
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9300,6 +10037,38 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 875c712d5a129ee4ab496f34a44b70af, type: 3}
+--- !u!1 &1138443312
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1138443313}
+  m_Layer: 0
+  m_Name: PlayerSafe
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1138443313
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1138443312}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 50.561394, y: -2.5448065, z: 24.270262}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 700261722}
+  - {fileID: 1362967184}
+  m_Father: {fileID: 0}
+  m_RootOrder: 24
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1141629857
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9411,6 +10180,7 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
 --- !u!1001 &1157690379
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9627,6 +10397,7 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
 --- !u!4 &1198690694 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: f42d87608d99909418e3c76580748012,
@@ -9682,6 +10453,7 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
 --- !u!65 &1201235312
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9769,6 +10541,7 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
 --- !u!1001 &1209685228
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9866,7 +10639,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1216931098
 Transform:
   m_ObjectHideFlags: 0
@@ -9879,7 +10652,7 @@ Transform:
   m_LocalScale: {x: 30, y: 200, z: 30}
   m_Children: []
   m_Father: {fileID: 486393974}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1216931099
 BoxCollider:
@@ -10237,6 +11010,7 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
 --- !u!1001 &1250325095
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10336,6 +11110,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1259262899}
   - component: {fileID: 1259262898}
+  - component: {fileID: 1259262900}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -10374,13 +11149,13 @@ MonoBehaviour:
   Diode1: {fileID: 233142818}
   Diode2: {fileID: 1430909466}
   Diode3: {fileID: 1619228577}
+  Porte: {fileID: 2118482504}
   Paupiere: {fileID: 1492708490}
   Lumiere: {fileID: 1090353360}
   Jour: 1
   FaisceauOK: 0
   PressionOK: 0
   LettreOK: 0
-  LastPress: 0
 --- !u!4 &1259262899
 Transform:
   m_ObjectHideFlags: 0
@@ -10393,8 +11168,28 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1259262900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1259262897}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e282b2001dde28f45872bb7b23bb839d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RandTimerUp: 100
+  RandTimerDown: 100
+  Sfx: []
+  Haut_Parleurs:
+  - {fileID: 1754272754}
+  - {fileID: 727588716}
+  - {fileID: 793553497}
+  - {fileID: 1450144141}
 --- !u!4 &1273091699 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: dddf6ffc2cfdf6e419d1faac5fd069dd,
@@ -10422,6 +11217,7 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
 --- !u!1001 &1288265342
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10517,6 +11313,7 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
 --- !u!1 &1292985375
 GameObject:
   m_ObjectHideFlags: 0
@@ -10536,7 +11333,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1292985376
 Transform:
   m_ObjectHideFlags: 0
@@ -10549,7 +11346,7 @@ Transform:
   m_LocalScale: {x: 30, y: 200, z: 30}
   m_Children: []
   m_Father: {fileID: 486393974}
-  m_RootOrder: 3
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1292985377
 MonoBehaviour:
@@ -10644,6 +11441,7 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
 --- !u!1001 &1297632314
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10765,6 +11563,7 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
 --- !u!1 &1312511631 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 0e199cfbb7d99db499aa75272551394d,
@@ -10792,6 +11591,7 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
 --- !u!65 &1312511634
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10979,6 +11779,7 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
 --- !u!65 &1344570627
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11158,6 +11959,7 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
 --- !u!1 &1362430080
 GameObject:
   m_ObjectHideFlags: 0
@@ -11252,6 +12054,67 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1362430080}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1362967183
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1362967184}
+  - component: {fileID: 1362967186}
+  - component: {fileID: 1362967185}
+  m_Layer: 0
+  m_Name: 1Col
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1362967184
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1362967183}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 187.1, y: -36.8, z: -59.3}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1138443313}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1362967185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1362967183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5de50130f8589943a67d8bb8e6a5ca5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Interaction: 3
+  DayPoint: {fileID: 0}
+  NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 700261722}
+--- !u!65 &1362967186
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1362967183}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 44.48, y: 22.54, z: 61.19}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1370423314
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11457,6 +12320,7 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
 --- !u!65 &1375534557
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11739,6 +12603,7 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
 --- !u!1001 &1405002438
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11855,6 +12720,7 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
 --- !u!1001 &1406604294
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12060,6 +12926,7 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
 --- !u!4 &1423229568 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: f42d87608d99909418e3c76580748012,
@@ -12343,6 +13210,133 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dddf6ffc2cfdf6e419d1faac5fd069dd, type: 3}
+--- !u!1 &1450144141
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1450144142}
+  - component: {fileID: 1450144143}
+  m_Layer: 0
+  m_Name: SpeakerRight
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1450144142
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1450144141}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 100, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 220953310}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1450144143
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1450144141}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1461439175 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 1613823327e0e7d40b4e995e21ea3bf5,
@@ -12364,6 +13358,7 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
 --- !u!1001 &1462653081
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12797,6 +13792,7 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
 --- !u!1001 &1511360015
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12902,6 +13898,7 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
 --- !u!1 &1520284519 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 43d6c9c667437264d9e4bb25a3364bdc,
@@ -12929,6 +13926,7 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
 --- !u!4 &1536944856 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 1042d4ac475016a4487ea36f2080e1ff,
@@ -13001,6 +13999,7 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
 --- !u!65 &1545299786
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13136,6 +14135,7 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
 --- !u!1001 &1558096170
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13275,6 +14275,7 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
 --- !u!65 &1568033519
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13457,6 +14458,7 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
 --- !u!1 &1608452410 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 0e199cfbb7d99db499aa75272551394d,
@@ -13504,6 +14506,7 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
 --- !u!1001 &1613774380
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13620,6 +14623,7 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
 --- !u!1 &1616802744
 GameObject:
   m_ObjectHideFlags: 0
@@ -14073,6 +15077,7 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
 --- !u!1001 &1668312340
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14361,6 +15366,7 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
 --- !u!4 &1703795556 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 43d6c9c667437264d9e4bb25a3364bdc,
@@ -14483,6 +15489,7 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
 --- !u!1001 &1707994112
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15004,6 +16011,7 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
 --- !u!1 &1749717431 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: dddf6ffc2cfdf6e419d1faac5fd069dd,
@@ -15038,6 +16046,134 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
+--- !u!1 &1754272754
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1754272755}
+  - component: {fileID: 1754272756}
+  m_Layer: 0
+  m_Name: SpeakerUp
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1754272755
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1754272754}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 100, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 220953310}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1754272756
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1754272754}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &1754893750
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15145,7 +16281,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1755662177
 Transform:
   m_ObjectHideFlags: 0
@@ -15158,7 +16294,7 @@ Transform:
   m_LocalScale: {x: 30, y: 200, z: 30}
   m_Children: []
   m_Father: {fileID: 486393974}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1755662178
 BoxCollider:
@@ -15336,6 +16472,7 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
 --- !u!1 &1817871897 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 1042d4ac475016a4487ea36f2080e1ff,
@@ -15363,6 +16500,7 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
 --- !u!1001 &1825136345
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15634,6 +16772,7 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
 --- !u!4 &1842516920 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 1042d4ac475016a4487ea36f2080e1ff,
@@ -15661,6 +16800,7 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
 --- !u!4 &1870052159 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 7bf915f8f22adab44801bb2d2b7ed5e8,
@@ -15700,6 +16840,7 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
 --- !u!1 &1883501246
 GameObject:
   m_ObjectHideFlags: 0
@@ -15815,6 +16956,7 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
 --- !u!1 &1901158975
 GameObject:
   m_ObjectHideFlags: 0
@@ -15847,7 +16989,7 @@ Transform:
   - {fileID: 887588543}
   - {fileID: 1946319699}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1907873514
 PrefabInstance:
@@ -15970,6 +17112,7 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
 --- !u!1001 &1908338600
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16187,6 +17330,7 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
 --- !u!1 &1946319698
 GameObject:
   m_ObjectHideFlags: 0
@@ -16300,6 +17444,7 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
 --- !u!1 &1953084100 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 95b589e61a75d304fba261074c14740d,
@@ -16321,6 +17466,7 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
 --- !u!1 &1953678696 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 1613823327e0e7d40b4e995e21ea3bf5,
@@ -16348,6 +17494,7 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
 --- !u!1 &1955671995 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 7bf915f8f22adab44801bb2d2b7ed5e8,
@@ -16369,6 +17516,7 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
 --- !u!1001 &1967399447
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16579,6 +17727,7 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
 --- !u!1 &1982337382
 GameObject:
   m_ObjectHideFlags: 0
@@ -16800,6 +17949,7 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
 --- !u!65 &1991778153
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16976,6 +18126,7 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
 --- !u!4 &2009544141 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: f42d87608d99909418e3c76580748012,
@@ -17031,6 +18182,7 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
 --- !u!65 &2011612152
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17291,6 +18443,7 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
 --- !u!1 &2036541973 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 875c712d5a129ee4ab496f34a44b70af,
@@ -17312,6 +18465,7 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
 --- !u!1 &2045465972 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 7bf915f8f22adab44801bb2d2b7ed5e8,
@@ -17339,6 +18493,7 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
 --- !u!1 &2050777950 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 1042d4ac475016a4487ea36f2080e1ff,
@@ -17360,6 +18515,7 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
 --- !u!1 &2060351039 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 1042d4ac475016a4487ea36f2080e1ff,
@@ -17381,6 +18537,7 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
 --- !u!4 &2065077647 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: a56a0bea4b13db04caf9d14b231abf42,
@@ -17583,7 +18740,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2092397436
 Transform:
   m_ObjectHideFlags: 0
@@ -17596,7 +18753,7 @@ Transform:
   m_LocalScale: {x: 30, y: 200, z: 30}
   m_Children: []
   m_Father: {fileID: 486393974}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &2092397437
 BoxCollider:
@@ -17757,6 +18914,28 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1135000847}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2118482504 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 2a1bebbac0e06c041a951adb44f40372,
+    type: 3}
+  m_PrefabInstance: {fileID: 1288265342}
+  m_PrefabAsset: {fileID: 0}
+--- !u!111 &2118482505
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2118482504}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 8d396e5b61bd09541b5f9a74a9dfce22, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 8d396e5b61bd09541b5f9a74a9dfce22, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1001 &2119476166
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18134,6 +19313,7 @@ MonoBehaviour:
   Interaction: 0
   DayPoint: {fileID: 0}
   NightPoint: {fileID: 0}
+  PlayerRepos: {fileID: 0}
 --- !u!65 &2138873833
 BoxCollider:
   m_ObjectHideFlags: 0
