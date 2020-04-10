@@ -42,9 +42,6 @@ float Temps;
 
             }
         }
-        else
-        {
-            timer = Temps;
-        }
+   
     }
 }

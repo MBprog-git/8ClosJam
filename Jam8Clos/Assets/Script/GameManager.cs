@@ -53,7 +53,7 @@ public class GameManager : MonoBehaviour
   //  public  int LastPress;
 
     // int currentPress;
-    bool Open;
+  public  bool Open;
     float ChronoCycle;
     private float yaw = 0.0f;
     private float pitch = 0.0f;
